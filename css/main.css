@@ -1,0 +1,301 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px 30px 30px;
+}
+.todo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    height: auto;
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-left: 5px solid #2A8D9C;
+    border-right: 5px solid #2A8D9C;
+    border-top: 30px solid #2A8D9C;
+    border-bottom: 5px solid #2A8D9C;
+}
+.blocks-wrapper {
+    padding: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.block {
+    min-height: 400px;
+    width: 30%;
+    position: relative;
+}
+.head {
+    position: absolute;
+    top: -39px;
+    color: white;
+
+}
+.headinp {
+    left: 39%;
+}
+.headdo {
+    left: 45%;
+
+}
+.headdone {
+    left: 45%;
+}
+.do {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-left: 5px solid #EC7C26;
+    border-right: 5px solid #EC7C26;
+    border-top: 30px solid #EC7C26;
+    border-bottom: 5px solid #EC7C26;
+}
+.inprogress {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-left: 5px solid #F4C430;
+    border-right: 5px solid #F4C430;
+    border-top: 30px solid #F4C430;
+    border-bottom: 5px solid #F4C430;
+}
+.done {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-left: 5px solid #2E8B57;
+    border-right: 5px solid #2E8B57;
+    border-top: 30px solid #2E8B57;
+    border-bottom: 5px solid #2E8B57;
+}
+.text-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.text-wrapper2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.text {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-top: 1px solid white;
+}
+.inProgrText {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-top: 1px solid white;
+}
+.doneText {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-top: 1px solid white;
+}
+/*.text span {
+    padding-left: 10px;
+}*/
+.add img {
+    width: 100%;
+    color: white;
+}
+.add {
+    width: 25px;
+   /* height: 100px;*/
+    position: absolute;
+    top: -27px;
+    left: 54%;
+}
+.blureModal {
+    position: absolute;
+    top: 0px;
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+#body {
+    margin: 0;
+    position: relative;
+}
+
+.wrap-modal {
+    display: none;
+}
+.wrap-modal2 {
+    display: block;
+}
+.modalWindow {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    opacity: 1;
+    z-index: 1;
+    width: 500px;
+    height: 164px;
+    background-color: white;
+    border-radius: 20px;
+}
+.inModalWindow {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 30px;
+}
+.inputModalWrapp {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+.inputModal {
+    border: 1px solid gray;
+    border-radius: 25px;
+    width: 100%;
+    height: 23px;
+    color: gray;
+    outline:none
+}
+.buttonsWrapp {
+    display: flex;
+    justify-content: space-between;
+}
+.buttonOk {
+    background-color: #2E8B57;
+    width: 70px;
+    height: 35px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttonOk p {
+    color: white;
+}
+.buttonCancel {
+    background-color: #F64A46;
+    width: 70px;
+    height: 35px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttonCancel p {
+    color: white;
+}
+.doAllButtonWrap {
+    display: flex;
+}
+.doneAllButtonWrap {
+    display: flex;
+}
+.inProgrAllButtonWrap {
+    display: flex;
+}
+.doDeleteButton {
+    background: url(./../images/delete-button.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+#doDeleteButtonWrap {
+    width: 25px;
+    height: 25px;
+}
+/*.hideModalWindow {
+    display: none;
+}
+.hideBlureModal {
+    display: none;
+}*/
+.doNextButton {
+    background: url(./../images/right-arrow.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+#doNextButtonWrap {
+    width: 25px;
+    height: 25px;
+}
+.inProgrNextButton {
+    background: url(./../images/right-arrow.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+#inProgrNextButtonWrap {
+    width: 25px;
+    height: 25px;
+}
+.inProgrDeleteButton {
+    background: url(./../images/delete-button.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+#inProgrDeleteButtonWrap {
+    width: 25px;
+    height: 25px;
+}
+#inProgressContainer {
+
+}
+.doneDeleteButton {
+    background: url(./../images/delete-button.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+#doneDeleteButtonWrap {
+    width: 25px;
+    height: 25px;
+}
+.inProgrPreviousButton {
+    background: url(./../images/left-arrow.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+#inProgrPreviousButtonWrap {
+    width: 25px;
+    height: 25px;
+}
+.donePreviousButton {
+    background: url(./../images/left-arrow.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+#donePreviousButtonWrap {
+    width: 25px;
+    height: 25px;
+}
+.taskWrap {
+    box-sizing: border-box;
+    background: rgba(236,124,38,0.6);
+}
+.inProgrWrap {
+    box-sizing: border-box;
+    background: rgba(244,196,48,0.6);
+}
+.doneWrap {
+    box-sizing: border-box;
+    background: rgba(46,139,87,0.6);
+}
+

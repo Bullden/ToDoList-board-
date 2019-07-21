@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8">
+    <title>ToDoList</title>
+</head>
+<body id="body">
+    <div id="wrap-modal" class="wrap-modal">
+        <div id="modalWindow" class="modalWindow">
+            <div class="inModalWindow">
+                <div class="inputModalWrapp"><input id="inputModal" class="inputModal"></div>
+                <div class="buttonsWrapp">
+                    <div id="buttonOk" class="buttonOk"><p>Submit</p></div>
+                    <div  id ='buttonCancel' class="buttonCancel"><p>Cancel</p></div>
+                </div>
+            </div>
+        </div>
+        <div id="blureModal" class="blureModal"></div>
+    </div>
+    <div class="wrapper">
+        <div class="todo" id="todo">
+            <div class="blocks-wrapper">
+                <div class="block do">
+                    <div class="add" id="add">
+                        <img src="images/add-circular-outlined-button.png">
+                    </div>
+                    <div class="head headdo">
+                        <p>Do</p>
+                    </div>
+                    <div class="text-wrapper" id="text-wrapper">
+
+                    </div>
+                </div>
+                <div class="block inprogress">
+                    <div class="head headinp">
+                        <p>In progress</p>
+                    </div>
+                    <div class="text-wrapper2" id="text-wrapper2">
+
+                    </div>
+                </div>
+                <div class="block done">
+                    <div class="head headdone">
+                        <p>Done</p>
+                    </div>
+                    <div class="text-wrapper3" id="text-wrapper3">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="index.js"></script>
+</body>
+</html>
