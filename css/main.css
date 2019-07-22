@@ -1,17 +1,29 @@
+
 * {
     font-family: 'Roboto', sans-serif;
 }
+
+#body {
+    margin: 0;
+    position: relative;
+}
+
+.wrap-modal {
+    display: none;
+}
+
 .wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 30px 30px 30px;
+    padding: 0 10px 10px 10px;
 }
+
 .todo {
+    margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
     height: auto;
     width: 100%;
     border-top-left-radius: 25px;
@@ -21,158 +33,198 @@
     border-top: 30px solid #2A8D9C;
     border-bottom: 5px solid #2A8D9C;
 }
+
 .blocks-wrapper {
-    padding: 25px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
     width: 100%;
     display: flex;
-    justify-content: space-around;
 }
+
 .block {
-    min-height: 400px;
-    width: 30%;
+    min-height: 450px;
+    margin-bottom: 30px;
+    width: 100%;
     position: relative;
+}
+
+.head p {
+    font-size: 25px;
+}
+.add img {
+    width: 100%;
+    height: 100%;
 }
 .head {
     position: absolute;
-    top: -39px;
+    top: -61px;
     color: white;
-
-}
-.headinp {
-    left: 39%;
-}
-.headdo {
-    left: 45%;
-
+    left: 23%;
 }
 .headdone {
-    left: 45%;
-}
-.do {
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    border-left: 5px solid #EC7C26;
-    border-right: 5px solid #EC7C26;
-    border-top: 30px solid #EC7C26;
-    border-bottom: 5px solid #EC7C26;
-}
-.inprogress {
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    border-left: 5px solid #F4C430;
-    border-right: 5px solid #F4C430;
-    border-top: 30px solid #F4C430;
-    border-bottom: 5px solid #F4C430;
-}
-.done {
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    border-left: 5px solid #2E8B57;
-    border-right: 5px solid #2E8B57;
-    border-top: 30px solid #2E8B57;
-    border-bottom: 5px solid #2E8B57;
+    left: 36%;
 }
 .text-wrapper {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
-.text-wrapper2 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-.text {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    border-left: 1px solid white;
-    border-right: 1px solid white;
-    border-top: 1px solid white;
-}
-.inProgrText {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    border-left: 1px solid white;
-    border-right: 1px solid white;
-    border-top: 1px solid white;
-}
-.doneText {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    border-left: 1px solid white;
-    border-right: 1px solid white;
-    border-top: 1px solid white;
-}
-/*.text span {
-    padding-left: 10px;
-}*/
-.add img {
-    width: 100%;
-    color: white;
-}
-.add {
-    width: 25px;
-   /* height: 100px;*/
-    position: absolute;
-    top: -27px;
-    left: 54%;
-}
-.blureModal {
-    position: absolute;
-    top: 0px;
-    opacity: 0.3;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-}
-#body {
-    margin: 0;
-    position: relative;
+
+.taskWrap {
+    box-sizing: border-box;
+    background: rgba(236, 124, 38, 0.6);
 }
 
-.wrap-modal {
-    display: none;
+.do {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-left: 5px solid #EC7C26;
+    border-right: 5px solid #EC7C26;
+    border-top: 40px solid #EC7C26;
+    border-bottom: 5px solid #EC7C26;
 }
-.wrap-modal2 {
-    display: block;
+
+.inprogress {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-left: 5px solid #F4C430;
+    border-right: 5px solid #F4C430;
+    border-top: 40px solid #F4C430;
+    border-bottom: 5px solid #F4C430;
 }
-.modalWindow {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+.done {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-left: 5px solid #2E8B57;
+    border-right: 5px solid #2E8B57;
+    border-top: 40px solid #2E8B57;
+    border-bottom: 5px solid #2E8B57;
+}
+
+.add {
+    width: 25px;
+    top: -33px;
+    left: 57%;
     position: absolute;
-    opacity: 1;
-    z-index: 1;
-    width: 500px;
-    height: 164px;
-    background-color: white;
-    border-radius: 20px;
 }
-.inModalWindow {
+.headinp {
+    left: 27%;
+}
+.headdo {
+    left: 40%;
+}
+.headdone {
+    left: 40%;
+}
+.doAllButtonWrap {
     display: flex;
-    flex-direction: column;
-    padding: 20px;
-    margin-top: 30px;
 }
-.inputModalWrapp {
+.inProgrAllButtonWrap {
     display: flex;
-    justify-content: center;
-    margin-bottom: 25px;
 }
-.inputModal {
-    border: 1px solid gray;
-    border-radius: 25px;
-    width: 100%;
-    height: 23px;
-    color: gray;
-    outline:none
+.doneAllButtonWrap {
+    display: flex;
 }
-.buttonsWrapp {
+.inProgrWrap {
+    box-sizing: border-box;
+    background: rgba(244, 196, 48, 0.6);
+}
+
+.doneWrap {
+    box-sizing: border-box;
+    background: rgba(46, 139, 87, 0.6);
+}
+.text {
+    font-size: 14px;
+    padding: 5px;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    border-top: 3px solid white;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.inProgrText {
+    font-size: 14px;
+    padding: 5px;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    border-top: 3px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.doneText {
+    font-size: 14px;
+    padding: 5px;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    border-top: 3px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#doNextButtonWrap {
+    width: 20px;
+    height: 20px;
+    padding-right: 10px;
+}
+
+#doDeleteButtonWrap {
+    width: 20px;
+    height: 20px;
+}
+
+#inProgrDeleteButtonWrap {
+    width: 20px;
+    height: 20px;
+}
+
+#inProgrNextButtonWrap {
+    width: 20px;
+    height: 20px;
+    padding-right: 10px;
+}
+
+#inProgrPreviousButtonWrap {
+    width: 20px;
+    height: 20px;
+    padding-right: 10px;
+}
+
+#doneDeleteButtonWrap {
+    width: 20px;
+    height: 20px;
+}
+
+#donePreviousButtonWrap {
+    width: 20px;
+    height: 20px;
+    padding-right: 10px;
+}
+.doDeleteButton {
+    background: url(./../images/delete-button.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.inProgrDeleteButton {
+    background: url(./../images/delete-button.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.doneDeleteButton {
+    background: url(./../images/delete-button.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
 }
 .buttonOk {
     background-color: #2E8B57;
@@ -182,10 +234,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.buttonOk p {
+    font-size: 16px;
     color: white;
 }
+
 .buttonCancel {
     background-color: #F64A46;
     width: 70px;
@@ -194,108 +246,607 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.buttonCancel p {
+    font-size: 16px;
     color: white;
 }
-.doAllButtonWrap {
-    display: flex;
+
+.inputModal {
+    font-size: 16px;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 25px;
+    width: 100%;
+    height: 23px;
+    color: gray;
+    outline: none;
 }
-.doneAllButtonWrap {
+
+.buttonsWrapp {
     display: flex;
+    justify-content: space-between;
 }
-.inProgrAllButtonWrap {
-    display: flex;
-}
-.doDeleteButton {
-    background: url(./../images/delete-button.png) no-repeat;
-    background-size: cover;
+
+.blureModal {
+    position: absolute;
+    top: 0px;
+    opacity: 0.3;
     width: 100%;
     height: 100%;
+    background-color: black;
 }
-#doDeleteButtonWrap {
-    width: 25px;
-    height: 25px;
+
+.inputModalWrapp {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
 }
-/*.hideModalWindow {
-    display: none;
+
+.inModalWindow {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
 }
-.hideBlureModal {
-    display: none;
-}*/
+
+.modalWindow {
+    width: 92%;
+    height: 9%;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    opacity: 1;
+    z-index: 1;
+    background-color: white;
+    border-radius: 20px;
+}
+.wrap-modal2 {
+    display: block;
+}
 .doNextButton {
-    background: url(./../images/right-arrow.png) no-repeat;
+    background: url(./../images/arrow-down-sign-to-navigate.png) no-repeat;
     background-size: cover;
     width: 100%;
     height: 100%;
 }
-#doNextButtonWrap {
-    width: 25px;
-    height: 25px;
-}
+
 .inProgrNextButton {
-    background: url(./../images/right-arrow.png) no-repeat;
+    background: url(./../images/arrow-down-sign-to-navigate.png) no-repeat;
     background-size: cover;
     width: 100%;
     height: 100%;
 }
-#inProgrNextButtonWrap {
-    width: 25px;
-    height: 25px;
-}
-.inProgrDeleteButton {
-    background: url(./../images/delete-button.png) no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-}
-#inProgrDeleteButtonWrap {
-    width: 25px;
-    height: 25px;
-}
-#inProgressContainer {
 
-}
-.doneDeleteButton {
-    background: url(./../images/delete-button.png) no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-}
-#doneDeleteButtonWrap {
-    width: 25px;
-    height: 25px;
-}
 .inProgrPreviousButton {
-    background: url(./../images/left-arrow.png) no-repeat;
+    background: url(./../images/navigate-up-arrow.png) no-repeat;
     background-size: cover;
     width: 100%;
     height: 100%;
-}
-#inProgrPreviousButtonWrap {
-    width: 25px;
-    height: 25px;
-}
-.donePreviousButton {
-    background: url(./../images/left-arrow.png) no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-}
-#donePreviousButtonWrap {
-    width: 25px;
-    height: 25px;
-}
-.taskWrap {
-    box-sizing: border-box;
-    background: rgba(236,124,38,0.6);
-}
-.inProgrWrap {
-    box-sizing: border-box;
-    background: rgba(244,196,48,0.6);
-}
-.doneWrap {
-    box-sizing: border-box;
-    background: rgba(46,139,87,0.6);
 }
 
+.donePreviousButton {
+    background: url(./../images/navigate-up-arrow.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+@media (min-width: 375px) {
+    .headdone {
+        left: 42%;
+    }
+    .headinp {
+        left: 32%;
+    }
+}
+@media screen and (min-width: 768px) {
+      .todo {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 100px;
+          height: auto;
+          width: 100%;
+          border-top-left-radius: 25px;
+          border-top-right-radius: 25px;
+          border-left: 5px solid #2A8D9C;
+          border-right: 5px solid #2A8D9C;
+          border-top: 30px solid #2A8D9C;
+          border-bottom: 5px solid #2A8D9C;
+      }
+    .blocks-wrapper {
+        padding: 25px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+
+    .block {
+        min-height: 350px;
+        width: 30%;
+         position: relative;
+    }
+
+    .head {
+        position: absolute;
+        top: -41px;
+        color: white;
+    }
+
+    .head p {
+        font-size: 16px;
+    }
+
+     .headinp {
+         left: 31%;
+     }
+     .headdo {
+         left: 43%;
+     }
+     .headdone {
+         left: 42%;
+     }
+    .do {
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-left: 5px solid #EC7C26;
+        border-right: 5px solid #EC7C26;
+        border-top: 30px solid #EC7C26;
+        border-bottom: 5px solid #EC7C26;
+    }
+
+    .inprogress {
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-left: 5px solid #F4C430;
+        border-right: 5px solid #F4C430;
+        border-top: 30px solid #F4C430;
+        border-bottom: 5px solid #F4C430;
+    }
+
+    .done {
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-left: 5px solid #2E8B57;
+        border-right: 5px solid #2E8B57;
+        border-top: 30px solid #2E8B57;
+        border-bottom: 5px solid #2E8B57;
+    }
+
+    .text-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .text-wrapper2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .text {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+        border-top: 1px solid white;
+        font-size: 16px;
+    }
+
+    .inProgrText {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+        border-top: 1px solid white;
+        font-size: 16px;
+    }
+
+    .doneText {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+        border-top: 1px solid white;
+        font-size: 16px;
+    }
+
+    /*.text span {
+        padding-left: 10px;
+    }*/
+    .add img {
+        width: 100%;
+        color: white;
+    }
+
+    .add {
+        width: 25px;
+        /* height: 100px;*/
+        position: absolute;
+        top: -27px;
+        left: 54%;
+    }
+
+    .blureModal {
+        position: absolute;
+        top: 0px;
+        opacity: 0.3;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+    }
+
+    #body {
+        margin: 0;
+        position: relative;
+    }
+
+    .wrap-modal {
+        display: none;
+    }
+
+    .wrap-modal2 {
+        display: block;
+    }
+
+    .modalWindow {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        opacity: 1;
+        z-index: 1;
+        width: 500px;
+        height: 164px;
+        background-color: white;
+        border-radius: 20px;
+    }
+
+    .inModalWindow {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        margin-top: 30px;
+    }
+
+    .inputModalWrapp {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 25px;
+    }
+
+    .inputModal {
+        border: 1px solid gray;
+        border-radius: 25px;
+        width: 100%;
+        height: 23px;
+        color: gray;
+        outline: none;
+        font-size: 16px;
+        padding: 1px;
+    }
+
+    .buttonsWrapp {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    span {
+        display: block;
+        padding-top: 2px;
+    }
+
+    .buttonOk {
+        background-color: #2E8B57;
+        width: 70px;
+        height: 35px;
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+    }
+
+    .buttonOk p {
+        color: white;
+    }
+
+    .buttonCancel {
+        background-color: #F64A46;
+        width: 70px;
+        height: 35px;
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+    }
+
+    .buttonCancel p {
+        color: white;
+    }
+
+    .doAllButtonWrap {
+        display: flex;
+    }
+
+    .doneAllButtonWrap {
+        display: flex;
+    }
+
+    .inProgrAllButtonWrap {
+        display: flex;
+    }
+
+    .doDeleteButton {
+        background: url(./../images/delete-button.png) no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    #doDeleteButtonWrap {
+        width: 19px;
+        height: 19px;
+    }
+
+    /*.hideModalWindow {
+        display: none;
+    }
+    .hideBlureModal {
+        display: none;
+    }*/
+    .doNextButton {
+        background: url(./../images/right-arrow.png) no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    #doNextButtonWrap {
+        width: 19px;
+        height: 19px;
+    }
+
+    .inProgrNextButton {
+        background: url(./../images/right-arrow.png) no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    #inProgrNextButtonWrap {
+        width: 19px;
+        height: 19px;
+    }
+
+    .inProgrDeleteButton {
+        background: url(./../images/delete-button.png) no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    #inProgrDeleteButtonWrap {
+        width: 19px;
+        height: 19px;
+    }
+
+    #inProgressContainer {
+
+    }
+
+    .doneDeleteButton {
+        background: url(./../images/delete-button.png) no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    #doneDeleteButtonWrap {
+        width: 19px;
+        height: 19px;
+    }
+
+    .inProgrPreviousButton {
+        background: url(./../images/left-arrow.png) no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    #inProgrPreviousButtonWrap {
+        width: 19px;
+        height: 19px;
+    }
+
+    .donePreviousButton {
+        background: url(./../images/left-arrow.png) no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    #donePreviousButtonWrap {
+        width: 19px;
+        height: 19px;
+    }
+
+    .taskWrap {
+        box-sizing: border-box;
+        background: rgba(236, 124, 38, 0.6);
+    }
+
+    .inProgrWrap {
+        box-sizing: border-box;
+        background: rgba(244, 196, 48, 0.6);
+    }
+
+    .doneWrap {
+        box-sizing: border-box;
+        background: rgba(46, 139, 87, 0.6);
+    }
+}
+@media (min-width: 1200px) {
+    .headinp {
+        left: 39%;
+    }
+}
+@media (min-width: 1600px) {
+    .head {
+        top: -60px;
+    }
+
+    .head p {
+        font-size: 25px;
+    }
+
+    .do {
+        border-left: 8px solid #EC7C26;
+        border-right: 8px solid #EC7C26;
+        border-top: 45px solid #EC7C26;
+        border-bottom: 8px solid #EC7C26;
+    }
+
+    .inprogress {
+        border-left: 8px solid #F4C430;
+        border-right: 8px solid #F4C430;
+        border-top: 45px solid #F4C430;
+        border-bottom: 8px solid #F4C430;
+    }
+
+    .done {
+        border-left: 8px solid #2E8B57;
+        border-right: 8px solid #2E8B57;
+        border-top: 45px solid #2E8B57;
+        border-bottom: 8px solid #2E8B57;
+    }
+
+    .block {
+        min-height: 650px;
+    }
+
+    .todo {
+        border-left: 8px solid #2A8D9C;
+        border-right: 8px solid #2A8D9C;
+        border-top: 45px solid #2A8D9C;
+        border-bottom: 8px solid #2A8D9C;
+    }
+
+    .text span {
+        font-size: 25px;
+    }
+
+    .inProgrText span {
+        font-size: 25px;
+    }
+
+    .doneText span {
+        font-size: 25px;
+    }
+
+    #doNextButtonWrap {
+        width: 27px;
+        height: 27px;
+        padding-top: 2px;
+    }
+
+    #doDeleteButtonWrap {
+        width: 30px;
+        height: 30px;
+    }
+
+    #inProgrDeleteButtonWrap {
+        width: 27px;
+        height: 27px;
+        padding-top: 2px;
+    }
+
+    #inProgrNextButtonWrap {
+        width: 27px;
+        height: 27px;
+        padding-top: 2px;
+    }
+
+    #inProgrPreviousButtonWrap {
+        width: 27px;
+        height: 27px;
+        padding-top: 2px;
+    }
+
+    #doneDeleteButtonWrap {
+        width: 30px;
+        height: 30px;
+    }
+
+    #donePreviousButtonWrap {
+        width: 27px;
+        height: 27px;
+        padding-top: 2px;
+    }
+
+    .add {
+        width: 35px;
+        top: -38px;
+    }
+
+    .text {
+        border-left: 2px solid white;
+        border-right: 2px solid white;
+        border-top: 2px solid white;
+        padding: 10px;
+    }
+
+    .inProgrText {
+        border-left: 2px solid white;
+        border-right: 2px solid white;
+        border-top: 2px solid white;
+        padding: 10px;
+    }
+
+    .doneText {
+        border-left: 2px solid white;
+        border-right: 2px solid white;
+        border-top: 2px solid white;
+        padding: 10px;
+    }
+
+    .modalWindow {
+        width: 600px;
+        height: 200px;
+    }
+
+    .inputModalWrapp {
+        margin-bottom: 51px;
+    }
+
+    .inModalWindow {
+        margin-top: 33px;
+    }
+
+    .buttonOk {
+        width: 85px;
+        height: 40px;
+    }
+
+    .buttonOk p {
+        font-size: 20px;
+    }
+
+    .buttonCancel {
+        width: 85px;
+        height: 40px;
+    }
+
+    .buttonCancel p {
+        font-size: 20px;
+    }
+
+    .inputModal {
+        padding: 5px;
+        font-size: 25px;
+    }
+}

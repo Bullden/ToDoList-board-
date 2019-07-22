@@ -209,10 +209,11 @@ document.getElementById('buttonOk').addEventListener('click', (e) => {
         return true
     }
     document.getElementById('inputModal').value = ''
-    console.log('Ду до пуша',DO)
+  /*  console.log('Ду до пуша',DO)*/
     DO.push(newDo);
-    console.log('Ду после пуша',DO)
+  /*  console.log('Ду после пуша',DO)*/
     RenderDoTasks(DO);
+    document.getElementById('wrap-modal').classList.remove('wrap-modal2')
 
     /*if (localStorage.getItem('ArrayDO')) {
         localStorage.removeItem('ArrayDO')
